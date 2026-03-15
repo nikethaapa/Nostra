@@ -17,20 +17,40 @@
 </head>
 
 <body>
-    <!-- header -->
+   <!-- header -->
     <span class="head">
         <div>Sign Up and <span style="font-size: large;font-weight: bold;">Get 20% OFF</span> for your first Order</div>
-        <div>X</div>
+        <i id="head-close" class="fa-solid fa-xmark"></i>
     </span>
 
-    <!-- navbar -->
+   <!-- navbar -->
     <div class="navbar">
         <h2 class="navbar_title">Nostra</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="navbar_menu">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+        <!-- menu -->
+        <div class="nav_links">
 
+            <p class="navbar-link"><a href="./index.html">Home</a></p>
+            <p class="navbar-link"><a href="#arrival">New Arrival</a></p>
+            <p class="navbar-link"><a href="#wanted">Most Wanted</a></p>
+            <p class="navbar-link"><a href="./collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="./contactus.html">Contact Us</a></p>
+        </div>
+        <div class="navbar_menu">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <!-- side_bar -->
+    <div class="side_bar">
+        <p style="text-align:right;">
+            <i id="side-navbar-close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side_links">
+            <p class="side_link"><a href="./index.html">Home</a></p>
+            <p class="side_link"><a href="#arrival">New Arrival</a></p>
+            <p class="side_link"><a href="#wanted">Most Wanted</a></p>
+            <p class="side_link"><a href="./collection.html">Collections</a></p>
+            <p class="side_link"><a href="./contactus.html">Contact Us</a></p>
+        </div>
     </div>
     <!-- collection -->
     <div class="collection">
@@ -63,62 +83,62 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <div class="products">
-                <div class="product_item">
+                <div class="product_item" data-tags="New,Black,Party">
                     <img src="./img/black1.jpg" alt="" style="width: 20vw;">
                     <h3>FLORAL PRINT FLOWING SHIRT</h3>
                     <p>₹ 1,350.00</p>
                     <filter style="visibility: hidden;">New,Black,Party</filter>
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="New,Blue,Summer">
                     <img src="./img/blue3.jpg" alt="" style="width: 20vw;">
                     <h3>FLUID RELAXED FIT SHIRT</h3>
                     <p>₹ 3,950.00</p>
                     <filter style="visibility: hidden;">New,Blue,Summer</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="New,Black,Party">
                     <img src="./img/jacket.jpg" alt="" style="width: 20vw;">
                     <h3>LEATHER BOMBER JACKET</h3>
                     <p>₹ 17,650.00</p>
                     <filter style="visibility: hidden;">New,Black,Party</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="New,Grey,Beach">
                     <img src="./img/grey3.jpg" alt="" style="width: 20vw;">
                     <h3>GEOMETRIC PRINT SHIRT</h3>
                     <p>₹ 2,950.00</p>
                     <filter style="visibility: hidden;">New,Grey,Beach</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="Old,Black,Summer">
                     <img src="./img/white1.jpg" alt="" style="width: 20vw;">
                     <h3>BASIC RIBBED CONTRAST T-SHIRT</h3>
                     <p>₹ 1,650.00</p>
                     <filter style="visibility: hidden;">Old,Black,Summer</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="Old,Red,Summer">
                     <img src="./img/red1.jpg" alt="" style="width: 20vw;">
                     <h3>SLOGAN PRINT POCKET T-SHIRT</h3>
                     <p>₹ 2,050.00</p>
                     <filter style="visibility: hidden;">Old,Red,Summer</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="New,Grey,Party">
                     <img src="./img/shrit1.jpg" alt="" style="width: 20vw;">
                     <h3>100% LINEN RELAXED FIT SHIRT</h3>
                     <p>₹ 1,350.00</p>
                     <filter style="visibility: hidden;">New,Grey,Party</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="New,Black,Beach">
                     <img src="./img/black3.jpg" alt="" style="width: 20vw;">
                     <h3>FLOWING CONTRAST PRINT SHIRT</h3>
                     <p>100% LINEN RELAXED FIT SHIRT</p>
                     <filter style="visibility: hidden;">New,Black,Beach</filter>
 
                 </div>
-                <div class="product_item">
+                <div class="product_item" data-tags="Old,Grey,Party">
                     <img src="./img/grey2.jpg" alt="" style="width: 20vw;">
                     <h3>GEOMETRIC JACQUARD SHIRT</h3>
                     <p>₹ 2,950.00</p>
@@ -158,3 +178,7 @@
             <p style="font-size: 1.7vw;">@ 2023 Nostra.com</p>
         </div>
     </section>
+    <script src="./collection.js"></script>
+
+</body>
+</html>

@@ -20,47 +20,57 @@
     <!-- header -->
     <span class="head">
         <div>Sign Up and <span style="font-size: large;font-weight: bold;">Get 20% OFF</span> for your first Order</div>
-        <div>✕</div>
+        <i id="head-close" class="fa-solid fa-xmark"></i>
     </span>
 
     <!-- navbar -->
     <div class="navbar">
         <h2 class="navbar_title">Nostra</h2>
-        <svg onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="navbar_menu">
+        <!-- menu -->
+        <div class="nav_links">
 
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-
-        </svg>
+            <p class="navbar-link"><a href="./index.html">Home</a></p>
+            <p class="navbar-link"><a href="#arrival">New Arrival</a></p>
+            <p class="navbar-link"><a href="#wanted">Most Wanted</a></p>
+            <p class="navbar-link"><a href="./collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="./contactus.html">Contact Us</a></p>
+        </div>
+        <div class="navbar_menu">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <!-- side_bar -->
+    <div class="side_bar">
+        <p style="text-align:right;">
+            <i id="side-navbar-close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side_links">
+            <p class="side_link"><a href="./index.html">Home</a></p>
+            <p class="side_link"><a href="#arrival">New Arrival</a></p>
+            <p class="side_link"><a href="#wanted">Most Wanted</a></p>
+            <p class="side_link"><a href="./collection.html">Collections</a></p>
+            <p class="side_link"><a href="./contactus.html">Contact Us</a></p>
+        </div>
     </div>
 
-    <!-- menu -->
-    <div class="menu" id="menu">
-        <p class="close" onclick="closeMenu()">✕</p>
-        <a href="./index.html">Home</a>
-        <a href="">New Arrival</a>
-        <a href="">Most Wanted</a>
-        <a href="./collection.html">Collections</a>
-        <a href="./contactus.html">Contact Us</a>
-    </div>
     <!-- img -->
     <section class="img">
         <div class="img_lef">
-            <i id="left" class="fa-solid fa-angle-left" style="color: black;"></i>
-        </div>
+        <i id="left" class="fa-solid fa-angle-left" style="color: white;"></i>
+    </div>
         <div class="img_cont">
-            <h2 style="background-color: white;display: inline;margin-right: 5%;">Level up your style with our</h2><br>
-            <h5 style="background-color: white; display: inline;">Summer Collections</h5>
+            <h2 style="display: inline;margin-right: 5%;">Level up your style with our</h2><br>
+            <h5 style="display: inline;">Summer Collections</h5>
             <button style="display: block;margin-left: 40%;margin-top: 5px;">Shop Now<i
                     class="fa-solid fa-arrow-right "></i></button>
         </div>
         <div class="img_img">
-            <img class="silde" src="./img/Heading1.png" alt="" style="width: 100%;">
-            <img class="silde" src="./img/Heading1.png" alt="">
-            <img class="silde" src="./img/Heading1.png" alt="">
+            <img class="slide" src="./img/Heading1.png" alt="" style="width: 100%;">
+            <img class="slide" src="./img/Heading1.png" alt="">
+            <img class="slide" src="./img/Heading1.png" alt="">
         </div>
         <div class="img_rig">
-            <i class="fa-solid fa-angle-right" style="color: black;"></i>
+            <i id="right" class="fa-solid fa-angle-right" style="color: white;"></i>
         </div>
     </section>
     <!-- brands -->
@@ -112,7 +122,7 @@
         </div>
     </section>
     <!-- container -->
-    <section class="container">
+    <section class="container scroll">
         <div class="container1">
             <div>
                 <h3 style="font-weight: bold;">We Provide Best</h3>
@@ -146,8 +156,8 @@
         </div>
     </section>
     <!-- New Arrival -->
-    <h2 style="margin: 10px; padding: 10px;">New Arrivals</h2>
-    <section class="new">
+    <h2 style="margin: 10px; padding: 10px;" class="scroll" id="arrival">New Arrivals</h2>
+    <section class="new scroll">
         <div class="new_dress">
             <img src="./img/black1.jpg" alt="" style="width: 20vw;">
             <div class="blacky"></div>
@@ -178,8 +188,8 @@
         </div>
     </section>
     <!-- Most Wanted  -->
-    <h2 style="margin: 10px; padding: 10px;">Most Wanted</h2>
-    <section class="want">
+    <h2 style="margin: 10px; padding: 10px;" class="scroll" id="wanted">Most Wanted</h2>
+    <section class="want scroll">
         <h3></h3>
         <div class="want_item">
             <img src="./img/shrit1.jpg" alt="" style="width: 21vw;">
@@ -223,7 +233,7 @@
         </div>
     </section>
     <!-- Limited Offer -->
-    <section class="limited">
+    <section class="limited scroll">
         <div class="offer">
             <div class="offer_img">
                 <img src="./img/west1.png" alt="">
@@ -237,7 +247,7 @@
         </div>
     </section>
     <!-- Newsletter -->
-    <section class="news">
+    <section class="news scroll">
         <h3>Join our News Letter</h3>
         <p style="margin-top: 0px;">Signup for our email newspaper to get exclusive
             discounts,updates, and more</p>
@@ -251,7 +261,7 @@
         </div>
     </section>
     <!-- footer -->
-    <section class="foot_cont">
+    <section class="foot_cont scroll">
         <div class="footer">
             <div class="footer1">
                 <h2>Nostra</h2>
@@ -266,7 +276,7 @@
             <p style="font-size: 1.7vw;">@ 2023 Nostra.com</p>
         </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
