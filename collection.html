@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <span class="head">
+        <div>Sign Up and <span style="font-size: large;font-weight: bold;">Get 20% OFF</span> for your first Order</div>
+        <div>X</div>
+    </span>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <h2 class="navbar_title">Nostra</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="navbar_menu">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+    </div>
+    <!-- collection -->
+    <div class="collection">
+        <div class="filter_container">
+            <h4 class="occasion">Occasion</h4>
+            <div>
+                <label><input type="checkbox" name="filter" id="Summer" value="Summer">Summer</label>
+                <label><input type="checkbox" name="filter" id="Party" value="Party">Party</label>
+                <label><input type="checkbox" name="filter" id="Beach" value="Beach">Beach</label>
+            </div>
+            <h4 class="color">Colors</h4>
+            <div>
+                <label><input type="checkbox" name="filter" id="black" value="Black">Black</label>
+                <label><input type="checkbox" name="filter" id="blue" value="Blue">Blue</label>
+                <label><input type="checkbox" name="filter" id="brown" value="Brown">Brown</label>
+                <label><input type="checkbox" name="filter" id="grey" value="Grey">Grey</label>
+                <label><input type="checkbox" name="filter" id="white" value="White">White</label>
+                <label><input type="checkbox" name="filter" id="red" value="Red">Red</label>
+            </div>
+            <h4 class="arrival">Arrivals</h4>
+            <div>
+                <label><input type="checkbox" name="filter" id="new" value="New">New</label>
+                <label><input type="checkbox" name="filter" id="old" value="Old">Old</label>
+            </div>
+            <hr class="line">
+        </div>
+        <div class="product">
+            <form action="" class="nav_product">
+                <input type="search" id="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="products">
+                <div class="product_item">
+                    <img src="./img/black1.jpg" alt="" style="width: 20vw;">
+                    <h3>FLORAL PRINT FLOWING SHIRT</h3>
+                    <p>₹ 1,350.00</p>
+                    <filter style="visibility: hidden;">New,Black,Party</filter>
+                </div>
+                <div class="product_item">
+                    <img src="./img/blue3.jpg" alt="" style="width: 20vw;">
+                    <h3>FLUID RELAXED FIT SHIRT</h3>
+                    <p>₹ 3,950.00</p>
+                    <filter style="visibility: hidden;">New,Blue,Summer</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/jacket.jpg" alt="" style="width: 20vw;">
+                    <h3>LEATHER BOMBER JACKET</h3>
+                    <p>₹ 17,650.00</p>
+                    <filter style="visibility: hidden;">New,Black,Party</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/grey3.jpg" alt="" style="width: 20vw;">
+                    <h3>GEOMETRIC PRINT SHIRT</h3>
+                    <p>₹ 2,950.00</p>
+                    <filter style="visibility: hidden;">New,Grey,Beach</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/white1.jpg" alt="" style="width: 20vw;">
+                    <h3>BASIC RIBBED CONTRAST T-SHIRT</h3>
+                    <p>₹ 1,650.00</p>
+                    <filter style="visibility: hidden;">Old,Black,Summer</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/red1.jpg" alt="" style="width: 20vw;">
+                    <h3>SLOGAN PRINT POCKET T-SHIRT</h3>
+                    <p>₹ 2,050.00</p>
+                    <filter style="visibility: hidden;">Old,Red,Summer</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/shrit1.jpg" alt="" style="width: 20vw;">
+                    <h3>100% LINEN RELAXED FIT SHIRT</h3>
+                    <p>₹ 1,350.00</p>
+                    <filter style="visibility: hidden;">New,Grey,Party</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/black3.jpg" alt="" style="width: 20vw;">
+                    <h3>FLOWING CONTRAST PRINT SHIRT</h3>
+                    <p>100% LINEN RELAXED FIT SHIRT</p>
+                    <filter style="visibility: hidden;">New,Black,Beach</filter>
+
+                </div>
+                <div class="product_item">
+                    <img src="./img/grey2.jpg" alt="" style="width: 20vw;">
+                    <h3>GEOMETRIC JACQUARD SHIRT</h3>
+                    <p>₹ 2,950.00</p>
+                    <filter style="visibility: hidden;">Old,Grey,Party</filter>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter -->
+    <section class="news">
+        <h3>Join our News Letter</h3>
+        <p style="margin-top: 0px;">Signup for our email newspaper to get exclusive
+            discounts,updates, and more</p>
+        <div>
+            <input type="text" style="margin-bottom: 10px;">
+        </div>
+        <div>
+            <button>
+                Subscribe<i class="fa-solid fa-arrow-right "></i>
+            </button>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="foot_cont">
+        <div class="footer">
+            <div class="footer1">
+                <h2>Nostra</h2>
+                <p style="font-size: 1.7vw;">The Standard chunk of Lorem ipsum used
+                    since the 1500s is reproduced below for those insterest</p>
+            </div>
+            <div class="footer2">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p style="font-size: 1.7vw;">@ 2023 Nostra.com</p>
+        </div>
+    </section>
